@@ -6,7 +6,7 @@
 Probabilistic path models have significantly improved generative tasks in computer vision. Researchers use diffusion model as 3D pretrained decoder, learning representation by predicting noise during the forward diffusion process. However, this method requires noise addition and denoising operations throughout the entire point cloud, leading to high computational costs, inefficient training processes, and increased optimization complexity. To address these challenges, this paper proposes a novel point cloud representation learning method based on Continuous Normalizing Flows(CNFs), named PointFM, which introduces a straightforward and easy-to-train Rectified Flow Matching for the first time. Overall, PointFM utilizes sparse point cloud as target samples and optimizes the flow relationship between Gaussian distribution and target distribution along optimal transport path. In terms of conditional generation, we propose a Hybrid Torus Mask and Multi-scale Conditional Generation Model during the encoding process, which enhances multi-scale feature interaction and improves representation capability. PointFM offers superior training efficiency and lower complexity compared to other generative methods, achieving strong performance on various downstream tasks, with average gains of 5.12\% and 2.07\% over PointMAE and PointDiff on ScanObjectNN.
 
 <div  align="center">    
- <img src="./figure/PointFM.png" width = "666"  align=center />
+ <img src="./PointFM.png" width = "666"  align=center />
 </div>
 
 
