@@ -49,7 +49,7 @@ CUDA_VISIBLE_DEVICES=<GPUs> python pointfm_main.py --config cfgs/pretrain.yaml -
 ```
 
 ## 5. PointFM fine-tuning
-Run the following command to fine-tunine the PointDif model on ScanObjectNN:
+Run the following command to fine-tunine the PointFM model on ScanObjectNN:
 ```
 CUDA_VISIBLE_DEVICES=<GPUs> python pointfm_main.py --config cfgs/finetune_scan_hardest.yaml --finetune_model --exp_name <output_file_name> --ckpts <path/to/pre-trained/model>
 CUDA_VISIBLE_DEVICES=<GPUs> python pointfm_main.py --config cfgs/finetune_scan_objbg.yaml --finetune_model --exp_name <output_file_name> --ckpts <path/to/pre-trained/model>
